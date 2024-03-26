@@ -1,3 +1,4 @@
+
 // let a = 33;
 // let b = 0.1;
 // let c = true;
@@ -74,11 +75,14 @@
 // console.log(3%3);
 
 //console.log("3" +3); // string concatenation
-//console.log("3" + 2+2); // string concatenation
+//console.log("3" + 2+2); // string concatenation plus simple addition is here but only concatenation 
+//happens here.
  var a= 1;
- console.log(++a); //prefix operator- here first the value of a is increased then print happens
- console.log(a++); // postfix operator - here first the value of b is printed then increased,
- console.log(a);
+//  console.log(++a); //prefix operator- here first the value of a is increased then print happens
+//  console.log(a++); // postfix operator - here first the value of a is printed then increased,
+//  console.log(a);
+
+ 
 
 
 

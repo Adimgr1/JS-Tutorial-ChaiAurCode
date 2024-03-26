@@ -20,3 +20,8 @@ Symbol // used in react to give uniqueness to the componenets;
 //  undefined
 
 //then we have object data type
+
+// object data types are pass by reference type of data .
+//function is also of a function object type they all follow call by reference thing.
+//primitive data types stored in static and static data is only pass by value means the copy of data is created
+// inside the stack memory
