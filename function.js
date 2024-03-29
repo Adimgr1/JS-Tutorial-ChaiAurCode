@@ -25,4 +25,19 @@ function any(...num){
 
 console.log(any(200,3000,400));
 
+
+
 // if we want we can directly initialize object and array inside the function.
+
+const user = {
+    name: "Aditya",
+    roll: 29
+}
+
+function hello(one){
+    one.name= "Aditya Kuamr"
+    console.log(one.name);
+}
+
+hello(user)
+console.log(user);
