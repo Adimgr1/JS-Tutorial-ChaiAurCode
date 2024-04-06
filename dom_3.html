@@ -32,6 +32,19 @@
     console.log(b);
     document.body.appendChild(b)//to link DOM to html document 
 
+    //edit in existing element 
+    const f= document.querySelector("ol")
+    const d= f.childNodes
+    console.log(d);
+    d[0].innerHTML="Hello" // one way by using inner html
+    d[0].replaceWith(document.createElement("li").innerText="Monday")// replace the whole
+    //tag with new tag.
+    
+    // **********************REMOVING ELEMENT ***********************
+    d[0].remove()// select and remove with new tag
+
+
+
     
 </script>
 </html>
