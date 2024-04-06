@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const a=document.querySelector('body')
+    a.style.backgroundColor='#212121'
+    const b=document.createElement('div')
+    b.style.color="white"
+    b.setAttribute("class","main")
+    b.setAttribute('id',"div1")
+    const c = document.createElement('ol')
+    const e= ["Monday","Thuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    
+    for(i=0;i<=6;i++){
+        const d = document.createElement("li")
+        if(i==0){
+            d.style.backgroundColor="red"
+        }
+        d.innerHTML=e[i]
+        d.className="day"
+        c.append(d)
+    }
+    b.appendChild(c)
+    
+    console.log(b);
+    document.body.appendChild(b)
+
+    
+</script>
+</html>
