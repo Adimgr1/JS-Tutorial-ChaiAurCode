@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div id="div1" class="div1" >
-        <h1 id="title">Hello This is DOM Class
-            <div></div>
-        </h1>
-        <p id="para1">Chai Aur Code is teaching me this DOM- Manipulation thing
-        </p>
-        <ol>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-        </ol>
+<body style="background-color: #212121;color: white;">
+    <div id="div1" class="parent" >
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
     </div>
 </body>
+<script>
+    const a=  document.querySelector(".parent")
+    //console.log(a.children);// .children gives HTML collection for node list we have .querySelectorAll
+    // for (let index = 0; index < a.children.length; index++) {
+    //     const element = a.children[index];
+    //     console.log(element);
+        
+    // }
+    a.children[1].style.backgroundColor="red"
+    //console.log(a.children[1]);
+    //a.firstElementChild -> Gives us the first child element of a.
+    //a.lastElementChild ->  Gives us the last child element of a
+    //console.log(a.lastElementChild);
+
+    const child=document.querySelector(".day")
+    console.log(child);
+    console.log(child.parentElement);
+    console.log(child.nextElementSibling);
+    //by the use of these methods we jump from child to parent
+    console.log(a.childNodes)// gives the node list of every element 
+
+
+
+
+
+
+</script>
 </html>
