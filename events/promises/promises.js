@@ -77,12 +77,19 @@ console.log(5);
 // }
 // apifetching();
 
-fetch('https://api.github.com/users/Adimgr1').
-then((res)=>{
+const a=fetch('https://api.github.com/users/Adimgr1')
+setTimeout(()=>{
+    console.log("Hello");
+},1000)
+console.log(1);
+
+
+a.then((res)=>{
     return(res.json()) // we know that it res have the response from fetch but actually when we say res.json() then that file
     // takes some time to convert into json and if we simply give print command after that then it will say promise pending.
     // so that's why we need to put multiple then because when one then is completed than only it goes to next then.
 }).then((a)=>{
+    
     console.log(a);
 
 })
