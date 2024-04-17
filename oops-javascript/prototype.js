@@ -18,7 +18,7 @@ Object.setPrototypeOf(a,{
 const cons= function(name,roll){
     this.name= name,
     this.roll= roll,
-     this.giveroll=function(){ // to directly add some functions inside an constructors we need to add this because 
+    this.giveroll=function(){ // to directly add some functions inside an constructors we need to add this because 
         //to ensure that the particular method is applicable to each instance of this constructors.
         console.log(this.roll)
     }
